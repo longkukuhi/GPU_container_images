@@ -11,6 +11,6 @@ RUN apt-get update \
  && conda install -y matplotlib \
  && conda install -y -c conda-forge jupyterlab \
  && conda install -y tensorflow \
- && conda install -y spacy \
- && ENV PATH="/root/miniconda3/bin/:/root/miniconda3/bin/:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ && conda install -y spacy
+ENV PATH="/root/miniconda3/bin/:/root/miniconda3/bin/:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
