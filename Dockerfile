@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/tensorflow:21.07-tf2-py3
+FROM nvcr.io/nvidia/tensorflow:21.03-tf1-py3
 RUN apt-get update \
  && apt-get install -y wget \
  && wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh \
