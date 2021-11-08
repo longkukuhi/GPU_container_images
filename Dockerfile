@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
+FROM nvcr.io/nvidia/tensorflow:21.03-tf2-py3
 RUN apt-get update \
  && apt-get install -y wget \
  && wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh \
@@ -11,5 +11,4 @@ RUN apt-get update \
  && conda install -y matplotlib \
  && conda install -y -c conda-forge jupyterlab \
  && conda install -y spacy \
- && conda install -y notebook
 CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
