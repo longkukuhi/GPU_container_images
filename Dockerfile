@@ -11,5 +11,5 @@ RUN apt-get update \
  && conda install -y matplotlib \
  && conda install -y -c conda-forge jupyterlab \
  && conda install -y tensorflow \
- && conda install -y spacy
+ && conda install -y spacy 
 CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
