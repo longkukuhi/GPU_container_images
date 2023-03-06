@@ -17,6 +17,6 @@ RUN apt-get update \
  && pip install fairscale==0.4.0 \
  && pip install numpy \ 
  && pip install scipy \
- && pip install opencv-python
+ && pip install opencv-python \
  && pip install notebook
 CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
