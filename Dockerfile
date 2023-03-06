@@ -1,6 +1,5 @@
 FROM nvcr.io/nvidia/pytorch:18.12.1-py3
 RUN apt-get update \
- && pip install pandas \
  && pip install scikit-learn \
  && pip install matplotlib \
  && pip install pytorch_lightning==1.5.5 \
