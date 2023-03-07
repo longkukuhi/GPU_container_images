@@ -17,5 +17,5 @@ RUN apt-get update \
  && pip install numpy \ 
  && pip install scipy \
  && pip install opencv-python \
- && pip install notebook
+ && pip install notebook==6.3.0
 CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
