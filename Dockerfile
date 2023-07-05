@@ -1,6 +1,7 @@
 FROM nvcr.io/nvidia/pytorch:23.06-py3
 RUN apt-get update \
  && apt-get install rustc \
+ && y \
  && pip install scikit-learn \
  && pip install matplotlib \
  && pip install pytorch_lightning==1.5.5 \
