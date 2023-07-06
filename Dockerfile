@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:23.06-py3
+FROM nvcr.io/nvidia/pytorch:21.12-py3
 RUN apt-get update \
  && pip install scikit-learn \
  && pip install matplotlib \
