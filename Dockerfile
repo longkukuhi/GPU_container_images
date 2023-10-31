@@ -1,6 +1,5 @@
 FROM nvcr.io/nvidia/pytorch:23.10-py3
-RUN apt-get update \
- && pip install scikit-learn \
+RUN pip install scikit-learn \
  && pip install matplotlib \
  && pip install numpy \ 
  && pip install scipy \
